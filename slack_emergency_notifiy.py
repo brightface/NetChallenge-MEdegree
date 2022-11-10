@@ -2,12 +2,14 @@ import json
 import sys
 import requests
 
+import account_env.slack
+
 
 def send_slack_msg(message):
-    url = "https://hooks.slack.com/services/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"
+    url = account_env.slack.webhook_url
     title = "Emergency Situations :hospital:"  # 타이틀 입력
     slack_data = {
-        "username": "Emergency Bot",  # 보내는 사람 이름
+        "username": "[KM WIFI] Emergency Bot",  # 보내는 사람 이름
         "icon_emoji": ":hospital:",
         # "channel" : "#위급상황-알림",
         "attachments": [
@@ -31,4 +33,4 @@ def send_slack_msg(message):
 
 
 if __name__ == "__main__":
-    send_slack_msg("성인 남성 1명이 쓰러졌습니다.")
+    send_slack_msg("성인 남성 1명이 쓰러졌습니다. (virtual situation)")
