@@ -3,6 +3,10 @@ import numpy as np
 import matlab.engine
 import matplotlib.pyplot as plt
 from drawnow import drawnow
+
+from slack_emergency_notifiy import send_slack_msg
+from sms_emergency_notifiy import send_sms
+
 def make_fig():
     plt.xlim(0, 1000)
     plt.ylim(0, 40)
@@ -76,6 +80,10 @@ while 1:
         n2 = tf.argmax(n, 1)
         result = n2.eval()
         drawnow(make_fig)
-        print(act[int(result)])
+
+        pred_act_label = act[int(result)]
+        print(pred_act_label)
+        send_slack_msg(pred_act_label) # 슬랙으로 행동 알림
+        # send_sms(pred_act_label) # 문자 SMS로 행동 알림 (요금 이슈로 테스트 상황에서는 주석 처리하기!)
 
         sess.close()
