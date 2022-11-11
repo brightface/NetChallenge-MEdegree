@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "461234921983",
+    "project_id": "csi-clone",
+    "storage_bucket": "csi-clone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461234921983:android:ddc1646326592c38c907ca",
+        "android_client_info": {
+          "package_name": "com.suwonsmartapp.instagramclon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461234921983-lmfvq3o0eh665jrjv7abmsen9su2mef1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.suwonsmartapp.instagramclon",
+            "certificate_hash": "cbf976034317c20ba5da888d624be68db2d8cb1b"
+          }
+        },
+        {
+          "client_id": "461234921983-0nhb8obqqjmvsc1bac3ng3kj30ij0e8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX4ksMoN3wpDsmFJPhVAkC9C7wDPjUqYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461234921983-0nhb8obqqjmvsc1bac3ng3kj30ij0e8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
