@@ -100,22 +100,11 @@ class _AccountPageState extends State<AccountPage> {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 8.0),
-                child: Text('$post\n게시물',
+                child: Text('$post\n총 라벨수',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 18.0)),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8.0),
-                child: Text('0\n팔로워',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 18.0)),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8.0),
-                child: Text('0\n팔로잉',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 18.0)),
-              ),
+
             ],
           ),
         ],
@@ -137,7 +126,7 @@ class _AccountPageState extends State<AccountPage> {
       ],
       backgroundColor: Colors.white,
       title: Text(
-        'KM WIFI danger prediction',
+        'KM WIFI                                     log out',
         style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
       ),
     );

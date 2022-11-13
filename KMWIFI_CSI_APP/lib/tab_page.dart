@@ -38,9 +38,9 @@ class _TabPageState extends State<TabPage> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.search), label: 'Search'),
+              icon: Icon(Icons.search), label: 'Label'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle), label: 'account'),
+              icon: Icon(Icons.account_circle), label: 'Account'),
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,

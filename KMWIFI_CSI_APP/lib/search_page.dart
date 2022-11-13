@@ -22,7 +22,7 @@ class _SearchPageState extends State<SearchPage> {
   Widget _buildAppBar() {
     return AppBar(
       title: Text(
-        'KM_WIFI CSI motion prediction',
+        'KM_WIFI Motion Labeling',
         style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
       ),
     );

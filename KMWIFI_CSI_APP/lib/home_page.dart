@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(fontSize: 24.0),
                 ),
                 Padding(padding: EdgeInsets.all(8.0)),
-                Text('행동을 보려면 로그인하세요.'),
+                Text('행동인식 로그인됨'),
                 Padding(padding: EdgeInsets.all(16.0)),
                 SizedBox(
                   width: 260.0,

@@ -29,7 +29,7 @@ class _CreatePageState extends State<CreatePage> {
 
   Future _getImage() async {
     print('클릭 되나');
-    var image = await picker.getImage(source: ImageSource.gallery);
+    var image = await picker.pickImage(source: ImageSource.gallery);
 
     setState(() {
       _image = File(image.path);
@@ -40,7 +40,7 @@ class _CreatePageState extends State<CreatePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('새 게시물'),
+        title: Text('새 행동라벨'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.send),
@@ -51,12 +51,14 @@ class _CreatePageState extends State<CreatePage> {
           )
         ],
       ),
+
+
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             _buildBody(),
             TextField(
-              decoration: InputDecoration(hintText: '내용을 입력하세요'),
+              decoration: InputDecoration(hintText: '라벨을 입력하세요'),
               controller: textEditingController,
             )
           ],
@@ -79,7 +81,7 @@ class _CreatePageState extends State<CreatePage> {
         _image, SettableMetadata(contentType: 'image/png'));
 
     final uri = await task.ref.getDownloadURL();
-
+    //데이터베이스에 이제 쓴다.
     final doc = FirebaseFirestore.instance.collection('post').doc();
     await doc.set({
       'id': doc.id,

@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Instagram Clone',
+              'KM WIFI 행동인식',
               style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
             ),
             Container(
