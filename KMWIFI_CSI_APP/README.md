@@ -1,4 +1,3 @@
-# instagram_clone
 
 
 ## Web 구성
