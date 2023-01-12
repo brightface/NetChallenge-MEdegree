@@ -1,6 +1,4 @@
-# instagram_clone
 
-인스타그램 클론
 
 ## Web 구성
 web 폴더 생성
